@@ -9,7 +9,7 @@ public class Reverse {
         int length = myString.length();
 
         // Iterate over all the characters from the end to the beginning and print each character
-        for (int i = (length - 1); i >= 0; i--) {
+        for (int i = length - 1; i >= 0; i--) {
             System.out.print(myString.charAt(i));
         }
 

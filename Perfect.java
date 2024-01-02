@@ -21,6 +21,7 @@ public class Perfect {
                 perfectDivisorsText += (" + " + i);
             }
         }
+
         // Print in case of a perfect number and non-perfect number
         if (divisorSum == num) {
             System.out.print(perfectDivisorsText);
