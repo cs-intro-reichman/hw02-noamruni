@@ -3,6 +3,14 @@
  */
 public class Divisors {
 	public static void main (String[] args) {
-		//// Put your code here
+		// parse the command line
+		int a = Integer.parseInt(args[0]);
+
+		// find and print the divisors
+		for (int i = 1; i <= a; i++){
+			if ((a % i) == 0){
+				System.out.println(i);
+			}
+		}
 	}
 }
