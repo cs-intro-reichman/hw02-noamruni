@@ -22,6 +22,6 @@ public class Reverse {
         }
 
         // Print the string middle character
-        System.out.println("\n" + myString.charAt(middle));
+        System.out.println("\n" + "The middle character is " + myString.charAt(middle));
     }
 }

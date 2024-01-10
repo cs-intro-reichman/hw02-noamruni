@@ -4,20 +4,19 @@
 public class DamkaBoard {
     public static void main(String[] args) {
 
-        // Parse the command line
-        int n = Integer.parseInt(args[0]);
-
-        // Iterate over rows and columns
-        for (int row = 1; row <= n; row++) {
-
-            // Space before even rows
-            if (row % 2 == 0) {
-                System.out.print(" ");
-            }
-            for (int col = 1; col <= n; col++) {
-                System.out.print("* ");
+        int numOfAsterisks = Integer.parseInt(args[0]);
+        for (int i = 0; i < numOfAsterisks; i++) {
+            if (i % 2 == 0) {
+                for (int j = 0; j < numOfAsterisks; j++) {
+                    System.out.print("* ");
+                }
+            } else {
+                for (int j = 0; j < numOfAsterisks; j++) {
+                    System.out.print(" *");
+                }
             }
             System.out.println();
         }
     }
 }
+
