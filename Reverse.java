@@ -16,7 +16,7 @@ public class Reverse {
         // Define the variable middle, and calculate its position based on the string length being even or odd
         int middle;
         if (length % 2 == 0) {
-            middle = length / 2;
+            middle = (length / 2) + 1;
         } else {
             middle = (length - 1) / 2;
         }
